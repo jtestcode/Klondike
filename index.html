@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solitaire</title>
+    <link rel='stylesheet' href='./style.css'>
+    <script type='module' src='./main.js'></script>
+</head>
+<body>
+    <div id='infoDisplay' style='display:flex'>
+        <div id='scoreDisplay' style='background-color:lightgrayt; width:100px; height:20px; user-select:none;'>Score: 0</div>
+        <div id='timeDisplay' style='background-color:transparent; width:100px; height:20px; user-select:none;'>Time: 0</div>
+        <div id='undoButton' style='background-color:transparent; width:80px; height:20px; text-align:center; user-select:none;'>⮌ Undo</div>
+        <div id='resetButton' style='background-color:transparent; width:80px; height:20px; text-align:center; user-select:none;'>⭮ Reset</div>
+    </div>
+    
+    <div id='gameBoard' style='background-color:transparent;'>
+        <div id='table1' style='display:flex'>
+            <div id='stock' class='stack' data-array-name='stockArray' data-pile-type='stock'>
+                <div class='emptyPileCard' data-pile-type='stock'></div>
+            </div>
+            <div id='waste' class='stack' data-array-name='wasteArray' data-pile-type='waste'>
+                <div class='emptyPileCard' data-pile-type='waste' ></div>
+            </div>
+    
+            <div id='emptyCardSeparator' class='stack'>
+                <div id='autoFillButton' style='display:none; position:absolute; font-size:13px; font-weight:normal'>AUTO FILL&#128498</div>
+            </div>
+    
+            <div id='foundation1' class='stack' data-array-name='foundation1Array' data-pile-type='foundation'>
+                <div class='emptyPileCard' data-pile-type='foundation' ></div>
+            </div>
+            <div id='foundation2' class='stack' data-array-name='foundation2Array' data-pile-type='foundation'>
+                <div class='emptyPileCard' data-pile-type='foundation' ></div>
+            </div>
+            <div id='foundation3' class='stack' data-array-name='foundation3Array' data-pile-type='foundation'>
+            <div class='emptyPileCard' data-pile-type='foundation' ></div>
+            </div>
+            <div id='foundation4' class='stack' data-array-name='foundation4Array' data-pile-type='foundation'>
+                <div class='emptyPileCard' data-pile-type='foundation' ></div>
+            </div>
+        </div>
+    
+        <div id='table2' style='display:flex'>
+            <div id='tableau1' class='stack' data-array-name='tableau1Array' data-pile-type='tableau'>
+                <div class='emptyPileCard' data-pile-type='tableau' ></div>
+            </div>
+            <div id='tableau2' class='stack' data-array-name='tableau2Array' data-pile-type='tableau'>
+                <div class='emptyPileCard' data-pile-type='tableau' ></div>
+            </div>
+            <div id='tableau3' class='stack' data-array-name='tableau3Array' data-pile-type='tableau'>
+                <div class='emptyPileCard' data-pile-type='tableau' ></div>
+            </div>
+            <div id='tableau4' class='stack' data-array-name='tableau4Array' data-pile-type='tableau'>
+                <div class='emptyPileCard' data-pile-type='tableau' ></div>
+            </div>
+            <div id='tableau5' class='stack' data-array-name='tableau5Array' data-pile-type='tableau'>
+                <div class='emptyPileCard' data-pile-type='tableau' ></div>
+            </div>
+            <div id='tableau6' class='stack' data-array-name='tableau6Array' data-pile-type='tableau'>
+                <div class='emptyPileCard' data-pile-type='tableau' ></div>
+            </div>
+            <div id='tableau7' class='stack' data-array-name='tableau7Array' data-pile-type='tableau'>
+                <div class='emptyPileCard' data-pile-type='tableau' ></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

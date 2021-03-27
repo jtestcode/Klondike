@@ -1,0 +1,28 @@
+.stack{
+	position:relative;
+	margin:5px;
+    height:42px;
+    width:42px;
+    background-color:transparent;
+    user-select:none;
+}
+
+.emptyPileCard{
+	position:absolute;
+    top:0px;
+	height:40px;
+    width:40px;
+    border:solid;
+    border-width:1px;
+    border-color:black;
+    background-color:transparent;
+    user-select:none;
+}
+
+#undoButton:hover, #resetButton:hover{
+	color:orange;
+}
+
+#emptyCardSeparator:hover{
+	color:green;
+}
