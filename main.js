@@ -1716,8 +1716,7 @@ function startGameWithAllCardsInTableau(){
         {suit:'♠', rank:'5', color:'black', face:'up'},
         {suit:'♠', rank:'4', color:'black', face:'up'},
         {suit:'♥', rank:'3', color:'red', face:'up'},
-		{suit:'♠', rank:'2', color:'black', face:'up'},
-        {suit:'♦', rank:'A', color:'red', face:'down'}
+		{suit:'♠', rank:'2', color:'black', face:'up'}
         ],
 	tableau5Array: [
 
@@ -1737,7 +1736,9 @@ function startGameWithAllCardsInTableau(){
     	],
     foundation4Array: [
     	],
-    stockArray: [],
+    stockArray: [
+		{suit:'♦', rank:'A', color:'red', face:'down'}
+	],
     emptyPileCardArray: [
     {suit:'', rank:'', color:'', face:'up'}
 	], 
